@@ -1,0 +1,31 @@
+<div class="root">
+  <div class="page-root">
+    <div class="big-title">ODIN</div>
+    <div class="small-title">Open Decentralized Identity Network</div>
+    <div class="smaller-title" style="margin-bottom: 50px;">
+      An uncensorable social communication service
+    </div>
+
+    <div class="page-sections-root">
+      <div class="page-sections-header">
+        <div class="header-item" [ngClass]="{'active-header-item': selectedItem === 'Problem'}"
+          (click)="selectedItem = 'Problem'">Problem</div>
+        <div class="header-item" [ngClass]="{'active-header-item': selectedItem === 'Purpose'}"
+          (click)="selectedItem = 'Purpose'">Purpose</div>
+        <div class="header-item" [ngClass]="{'active-header-item': selectedItem === 'How it works'}"
+          (click)="selectedItem = 'How it works'">How it works</div>
+      </div>
+      <div class="page-sections-content">
+        <div *ngIf="selectedItem === 'Problem'" class="content">
+          <app-problem style="width:100%;"></app-problem>
+        </div>
+        <div *ngIf="selectedItem === 'Purpose'" class="content">
+          <app-purpose style="width:100%;"></app-purpose>
+        </div>
+        <div *ngIf="selectedItem === 'How it works'" class="content">
+          <app-how-it-works style="width:100%;"></app-how-it-works>
+        </div>
+      </div>
+    </div>
+  </div> 
+
