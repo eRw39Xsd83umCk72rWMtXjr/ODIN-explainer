@@ -1,0 +1,98 @@
+<b>Operation</b><br>
+How does it operate?<br><br>
+
+<b>New user signing up for the first time</b><br>
+A new user wants to sign up to ODIN for the first time. They access an app of their preference (web, Android, iOS,
+Windows, etc.).
+This app will have some default node configurations set on it to allow for a seamless experience. However, if the user
+is more advanced, during their sign up process they can provide the identifier / routing information of their
+preferred node or nodes.
+
+<br><br>
+<b>The initial filter</b><br>
+The app has a connection to one or more nodes within ODIN. Through this connection, the client app can perform queries
+on the network.
+The user signs up for the first time and provides basic preliminary personal identification information, for example:
+<br>
+<ul>
+  <li>Full name: <br><b>Alice Smith</b></li>
+  <li>Date of birth (DOB): <br><b>1950-01-01</b></li>
+</ul>
+<br><br>
+Then perform a known (as in: not obscured) suitable <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+  target="_blank">cryptographic hash function</a> on those values to produce a nearly unique hash value.
+This hash value is stored in a directory hash table on some or most nodes. In the large majority of cases, this will be
+a unique hash value, but it is certainly plausible that of the 7+ billion alive people and many billions of dead people
+in the world that there are 2 people with the same hash value.
+You would also enter in this same preliminary information data for another person who you are connected to, for example
+your mother. Put in your mother's name, date of birth, and procude the hash value for that information.
+When ODIN is quieried for this hash value, there will either be 0, 1, or more than 1 hash value in ODIN's knowledge.
+
+<br><br>
+When a user is signing up, they can produce these hash values for any person that they personally know.
+
+Combine the hash function of this user and the other person to create a new hash value representing a relationship hash
+between 2 nearly unique people.
+
+
+
+
+
+<br><br><br><br><br>
+Alice signs up and creates the Social Network file for Alice.<br>
+In that file is included the names of between 3 people hopefully with their date of birth.
+
+What's the process for creating an encrypted message? I require my recipient's public key. Perhaps this key is stored in
+a database on my computer.
+I take the copy of the key and encrpyt my message with it and now I just need to get the message to them.
+
+I could email it, sending it from my email address to their email address, but this behavior is generally surveilled and
+so fails to adequately avoid surveillance, censorship and pollution.
+
+
+So I need to deliver the message without using a surveilled channel.
+
+
+So we need a public key directory service, a communication transmission service.
+
+But recipient needs a copy of their private key to unlock the encrypted message. Where is their private key?
+Well they could have it on their PC or their phone or carry it around on a USB stick. but what if the USB stick gets
+stolen?
+so we want to avoid necessarily using a tangible physical object for key storage,
+
+the best would be to have the private key also available in this network, available to the owner of the key.
+for example, Alice wants to send to Bob. Bob needs their private key available to them. Convenience is a primary factor
+in the success here. If Bob does not need to worry about properly managing his private key, he can receive the encrypted
+messaage and he, and ONLY he can unlock the encrypted message.
+
+The system needs to have a copy of the private key available, therefore, but not available to anybody except Bob.
+So the private key needs to be an encrypted data file. But how to make unencrypted this private key in order for Bob to
+use it?
+
+Somehow, there is something Bob needs to do with ODIN so that ODIN can provide his private key to him, without anyone
+being able to access it.
+
+ODIN keeps the private key stored as a safely encrypted file on one or more nodes, and issues a copy of that private key
+to whichever client claims to own it.
+
+Now that client has a copy of the encrypted private key.
+
+
+But how to unencrypt it? We need a method so that Bob and only Bob can unencrypt it.
+
+Therefore we need to somehow know that the person using the client app who claims to be Bob is in fact Bob. How does the
+software make this determination?
+
+Fundamentally by relying on other people to perform this task of identity verification
+We therefore need an appropriate method (software user interface) to input the data into some kind of data tracking
+mechanism (decentralized databases)
+
+So in order to send the message, the service needs to know the address of the recipient, as well as also act as an
+identity provider for the recipient, with more than just a username and password.
+
+How to maintain identity? Current model consists of username and password. This works for the direction of the
+individual who is verifying themselves to the server.
+But it does not prove to the server that this person is a unique person, and not somebody who has already signed up for
+5 email addresses.
+
+How do we create a software system that

@@ -1,0 +1,37 @@
+.header-root{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    height:100%;
+    width:100%;
+    font-weight: bold;
+
+}
+@media (min-width: 600px){
+    .header-root > .sidebar-button{
+        display: none;
+    }
+}
+@media (max-width: 599px){
+    .header-root{ 
+        font-size: 0.8em;
+    }
+}
+
+
+.sidebar-button{
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    border: none;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-button:hover{
+    background-color: rgb(0, 132, 255);
+}
