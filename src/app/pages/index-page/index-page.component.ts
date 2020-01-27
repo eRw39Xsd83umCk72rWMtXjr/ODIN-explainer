@@ -12,6 +12,6 @@ export class IndexPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  public lastUpdate: string = "2019-12-28";
+  public lastUpdate: string = "2020-01-27";
 
 }

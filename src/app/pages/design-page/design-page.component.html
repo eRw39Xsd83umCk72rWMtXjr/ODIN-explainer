@@ -1,12 +1,18 @@
-<b>Operation</b><br>
-How does it operate?<br><br>
+See:<br>
 
-<b>New user signing up for the first time</b><br>
-A new user wants to sign up to ODIN for the first time. They access an app of their preference (web, Android, iOS,
-Windows, etc.).
-This app will have some default node configurations set on it to allow for a seamless experience. However, if the user
-is more advanced, during their sign up process they can provide the identifier / routing information of their
-preferred node or nodes.
+<a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function"
+  target="_blank">cryptographic hash function</a>
+
+Alice and Bob are both able to generate private key and public key pairs.
+
+Then they need to be able to share copies of their public keys with one another.
+Then, then can encrypt messages with those keys.
+
+So we need a piece of software that performs the following functions:<br>
+-An address book for looking up public keys
+-A communication channel to transmit the message
+
+
 
 <br><br>
 <b>The initial filter</b><br>
@@ -19,8 +25,7 @@ The user signs up for the first time and provides basic preliminary personal ide
   <li>Date of birth (DOB): <br><b>1950-01-01</b></li>
 </ul>
 <br><br>
-Then perform a known (as in: not obscured) suitable <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function"
-  target="_blank">cryptographic hash function</a> on those values to produce a nearly unique hash value.
+Then perform a known (as in: not obscured) suitable  on those values to produce a nearly unique hash value.
 This hash value is stored in a directory hash table on some or most nodes. In the large majority of cases, this will be
 a unique hash value, but it is certainly plausible that of the 7+ billion alive people and many billions of dead people
 in the world that there are 2 people with the same hash value.

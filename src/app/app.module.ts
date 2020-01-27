@@ -12,7 +12,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderComponent } from './header/header.component';
 import { IndexPageComponent } from './pages/index-page/index-page.component';
 import { DesignPageComponent } from './pages/design-page/design-page.component';
-import { AccountingOfIdentitiesPageComponent } from './pages/accounting-of-identities-page/accounting-of-identities-page.component';
+import { IdentityPageComponent } from './pages/identity-page/identity-page.component';
 import { AgendaPageComponent } from './pages/agenda-page/agenda-page.component';
 import { SubversionPageComponent } from './pages/subversion-page/subversion-page.component';
 import { AnonymityPageComponent } from './pages/anonymity-page/anonymity-page.component';
@@ -29,11 +29,11 @@ import { LayersPageComponent } from './pages/layers-page/layers-page.component';
     HeaderComponent,
     IndexPageComponent,
     DesignPageComponent,
-    AccountingOfIdentitiesPageComponent,
+    IdentityPageComponent,
     AgendaPageComponent,
     SubversionPageComponent,
     AnonymityPageComponent,
-    LayersPageComponent,
+    LayersPageComponent
   ],
   imports: [
     BrowserModule,

@@ -5,7 +5,7 @@ import { ProblemPageComponent } from './pages/problem-page/problem-page.componen
 import { HowItWorksPageComponent } from './pages/how-it-works-page/how-it-works-page.component';
 import { PurposePageComponent } from './pages/purpose-page/purpose-page.component';
 import { DesignPageComponent } from './pages/design-page/design-page.component';
-import { AccountingOfIdentitiesPageComponent } from './pages/accounting-of-identities-page/accounting-of-identities-page.component';
+import { IdentityPageComponent } from './pages/identity-page/identity-page.component';
 import { AgendaPageComponent } from './pages/agenda-page/agenda-page.component';
 import { AnonymityPageComponent } from './pages/anonymity-page/anonymity-page.component';
 import { SubversionPageComponent } from './pages/subversion-page/subversion-page.component';
@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'purpose', component: PurposePageComponent },
   { path: 'how-it-works', component: HowItWorksPageComponent },
   { path: 'design', component: DesignPageComponent },
-  { path: 'accounting-of-identities', component: AccountingOfIdentitiesPageComponent },
+  { path: 'identity', component: IdentityPageComponent },
   { path: 'agenda', component: AgendaPageComponent },
   { path: 'subversion', component: SubversionPageComponent },
   { path: 'layers', component: LayersPageComponent },
